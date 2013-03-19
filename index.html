@@ -11,7 +11,7 @@
     margin: 0 auto;
     }
     
-    a {
+    a.bookmarklet {
       display: block;
       width: 90%;
       margin: 0 auto;
@@ -23,13 +23,25 @@
       color: white;
     }
     
+    a {
+      color: #33f;
+    }
+    
+    a:hover {
+      text-decoration: none;
+    }
+    
     
   </style>
   
   <div id=cont>
     
   <h1>Pop this in your bookmark folder</h1>
-  <a href="javascript:(function(){(function(){var url = window.location.href;url = url.replace(/^https:\/\//i, 'http://');url = url.replace('github.com', '5minutefork.com');location = url;})();})();">
+  <a class=bookmarklet href="javascript:(function(){(function(){var url = window.location.href;url = url.replace(/^https:\/\//i, 'http://');url = url.replace('github.com', '5minutefork.com');location = url;})();})();">
     Github to 5minutefork</a>  
+    
+    <p>Made by <a href="https://twitter.com/davidfitzgibbon">David Fitzgibbon</a> using <a href="https://twitter.com/rem">Remy Sharp</a>'s brilliant <a href="5minutefork.com">5minutefork.com</a>.</p>
+    
+    <p><a class=fork href="https://github.com/davidfitzgibbon/GH-to-5MF-bookmarklet">Fork this on GitHub!</a></p>
   </div>
   
